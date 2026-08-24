@@ -1,4 +1,94 @@
-:root{--cream:#f7f1e7;--paper:#fbf6ed;--ink:#201712;--gold:#bf8120;--line:#dec8a5;--green:#08783e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 53% 25%,#fffdf8 0,#f8f2e8 44%,#f4ede1 100%);color:var(--ink);font-family:"Fira GO",sans-serif}a{color:inherit}.site-header{height:104px;width:min(1370px,calc(100% - 100px));margin:auto;display:grid;grid-template-columns:260px 1fr 180px;align-items:center;gap:30px;position:relative;z-index:2}.brand{display:inline-flex;width:max-content;flex-direction:column;text-decoration:none;text-align:center}.brand-name{font:500 43px/1 "Oswald",sans-serif;letter-spacing:.28em}.brand-detail{color:var(--gold);font-size:9px;letter-spacing:.27em;margin-top:9px}.brand-detail:before,.brand-detail:after{content:"";display:inline-block;width:38px;height:1px;background:var(--gold);vertical-align:middle;margin:0 10px}.site-nav{justify-self:center;display:flex;gap:48px;font-size:13px;font-weight:500}.site-nav a{text-decoration:none;padding:20px 0;position:relative}.site-nav a:hover:after,.site-nav .active:after{content:"";position:absolute;bottom:8px;left:0;width:45px;height:2px;background:var(--gold)}.header-order,.gallery-button,.whatsapp-button{display:inline-flex;align-items:center;justify-content:center;gap:11px;color:white;text-decoration:none;font-size:13px;font-weight:600}.header-order{justify-self:end;background:var(--gold);border-radius:4px;padding:14px 18px}.header-order svg{width:22px;fill:currentColor}main{width:100%}.hero{min-height:492px;display:grid;grid-template-columns:minmax(380px,35%) 1fr;align-items:center;width:min(1370px,calc(100% - 100px));margin:auto;padding:20px 0 0}.hero-copy{padding:10px 25px 30px 35px}.eyebrow{margin:0 0 19px;color:var(--gold);font-size:13px;font-weight:500;letter-spacing:.15em}.hero h1{max-width:465px;margin:0;font-size:clamp(49px,4.5vw,69px);line-height:1.23;letter-spacing:-.035em;font-weight:700}.hero h1::first-line{color:var(--ink)}.gold-rule{display:block;width:63px;height:3px;background:var(--gold);margin:20px 0}.intro{max-width:440px;margin:0 0 24px;font-size:14px;line-height:1.65}.gallery-button{background:linear-gradient(90deg,#b97b19,#d49a2b);border-radius:4px;width:190px;padding:14px 20px;box-shadow:0 5px 13px #a56e1726}.gallery-button svg{width:23px;fill:white}.gallery{height:478px;display:grid;grid-template-columns:.92fr 1.12fr .92fr;gap:28px;align-items:end;padding:10px 0 28px;position:relative}.gallery:after{content:"";position:absolute;z-index:-1;bottom:0;left:-80px;right:-60px;height:66px;background:linear-gradient(#fbf5eb,#efe3d2);border-top:1px solid #ead9bd;box-shadow:0 -10px 25px #7f67401a}.canvas{margin:0;background:#eee;box-shadow:8px 13px 17px #3325153d,-3px 2px 6px #3325151c;position:relative}.canvas:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px #ffffff4d;pointer-events:none}.canvas img{display:block;width:100%;height:370px;object-fit:cover;filter:saturate(.72) sepia(.15) contrast(1.06)}.canvas-center{transform:translateY(-24px)}.canvas-center img{height:425px}.order{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#faf5ec;display:grid;grid-template-columns:1fr 1fr;gap:7%;padding:32px max(11%,calc((100% - 1140px)/2)) 28px}.pricing{padding-right:8%;border-right:1px solid var(--line)}.section-title{display:flex;align-items:center;gap:16px;margin-bottom:17px}.section-title svg{width:31px;height:31px;fill:var(--gold);flex:none}.section-title h2{margin:0;font-size:23px;line-height:1.3;font-weight:600}.price-list{list-style:none;margin:0;padding:0}.price-list li{height:27px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e4d7c3;font-size:14px}.price-list strong{font-size:15px;font-weight:500;color:var(--gold)}.contact{align-self:center;padding-left:5%}.contact-copy{max-width:380px;margin:4px 0 21px;font-size:14px;line-height:1.65}.whatsapp-button{background:var(--green);border-radius:4px;width:275px;padding:15px 20px}.whatsapp-button svg{width:25px;fill:white}.phone{display:flex;align-items:center;gap:13px;width:max-content;margin-top:25px;font-size:25px;font-weight:600;text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:7px}.phone span{font-size:34px;color:var(--gold)}footer{width:min(1280px,calc(100% - 100px));min-height:78px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;font-size:13px;font-weight:500}.location span,.promise span{color:var(--gold);font-size:23px}.social{text-align:center}.promise{text-align:right}
-@media(max-width:1050px){.site-header{width:calc(100% - 50px);grid-template-columns:220px 1fr 135px}.site-nav{gap:20px}.hero{width:calc(100% - 50px);grid-template-columns:38% 62%}.hero-copy{padding-left:0}.gallery{gap:14px}.order{padding-inline:6%}}
-@media(max-width:780px){.site-header{height:auto;padding:24px 0;width:calc(100% - 36px);grid-template-columns:1fr auto}.site-nav{display:none}.header-order{padding:13px}.hero{width:calc(100% - 36px);grid-template-columns:1fr;padding-top:35px}.hero-copy{padding:0}.hero h1{font-size:48px;max-width:600px}.intro{max-width:540px}.gallery{height:390px;margin-top:35px;gap:10px}.canvas img{height:285px}.canvas-center img{height:340px}.order{grid-template-columns:1fr;gap:55px;padding:55px 25px}.pricing{padding:0;border:0}.contact{padding:0}.price-list li{height:34px}footer{width:calc(100% - 50px);grid-template-columns:1fr;gap:8px;padding:25px 0}.social{display:none}.promise{text-align:left;margin:0}.location{margin:0}}
-@media(max-width:480px){.brand-name{font-size:32px}.brand-detail{font-size:7px}.brand-detail:before,.brand-detail:after{width:20px;margin:0 6px}.header-order{font-size:0}.header-order svg{width:24px}.hero{padding-top:22px}.eyebrow{font-size:11px}.hero h1{font-size:39px;line-height:1.3}.intro{font-size:13px}.gallery{height:300px;margin-top:30px;gap:7px}.canvas img{height:220px}.canvas-center img{height:268px}.canvas-center{transform:translateY(-14px)}.gallery:after{height:45px;left:-18px;right:-18px}.section-title h2{font-size:20px}.order{padding-inline:18px}.whatsapp-button{width:100%}.phone{font-size:20px}.location,.promise{font-size:12px}}
+:root {
+  --home-bg: #f7f1e7;
+  --gallery-bg: #f1e7d8;
+  --pricing-bg: #fcf9f2;
+  --contact-bg: #f6eddf;
+  --ink: #201712;
+  --gold: #bf8120;
+  --line: #dec8a5;
+  --green: #08783e;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); font-family: "Fira GO", sans-serif; }
+a { color: inherit; }
+
+.site-header { background: var(--home-bg); border-bottom: 1px solid var(--line); }
+.header-inner { width: min(1180px, calc(100% - 64px)); min-height: 104px; margin: auto; display: grid; grid-template-columns: 260px 1fr 150px; align-items: center; gap: 30px; }
+.brand { display: inline-flex; width: max-content; flex-direction: column; text-align: center; text-decoration: none; }
+.brand-name { font: 500 43px/1 "Oswald", sans-serif; letter-spacing: .28em; }
+.brand-detail { margin-top: 9px; color: var(--gold); font-size: 9px; letter-spacing: .27em; }
+.site-nav { justify-self: center; display: flex; gap: 38px; font-size: 13px; font-weight: 500; }
+.site-nav a { padding: 18px 0; text-decoration: none; }
+.site-nav a:hover { color: var(--gold); }
+.header-order, .primary-button, .whatsapp-button { display: inline-flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 13px; font-weight: 600; }
+.header-order { justify-self: end; gap: 9px; padding: 14px 18px; border-radius: 4px; background: var(--gold); }
+.header-order svg { width: 21px; fill: currentColor; }
+
+.page-section { width: 100%; border-bottom: 1px solid var(--line); scroll-margin-top: 0; }
+.section-container { width: min(1180px, calc(100% - 64px)); margin: auto; }
+.home-section { background: var(--home-bg); }
+.gallery-section { background: var(--gallery-bg); }
+.pricing-section { background: var(--pricing-bg); }
+.contact-section { background: var(--contact-bg); border-bottom: 0; }
+
+.home-container { min-height: 540px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 8%; padding-block: 72px; }
+.home-copy { max-width: 620px; }
+.eyebrow { margin: 0 0 18px; color: var(--gold); font-size: 13px; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; }
+h1, h2 { margin: 0; }
+h1 { max-width: 620px; font-size: clamp(48px, 5.2vw, 76px); line-height: 1.16; letter-spacing: -.04em; }
+.gold-rule { display: block; width: 64px; height: 3px; margin: 24px 0; background: var(--gold); }
+.intro { max-width: 570px; margin: 0 0 28px; font-size: 16px; line-height: 1.7; }
+.primary-button { min-width: 180px; padding: 15px 22px; border-radius: 4px; background: var(--gold); }
+.home-brand { padding: 70px 20px; border-block: 1px solid var(--line); text-align: center; }
+.home-brand span { display: block; font: 500 clamp(62px, 8vw, 110px)/1 "Oswald", sans-serif; letter-spacing: .2em; }
+.home-brand small { display: block; margin-top: 20px; color: var(--gold); font-size: 11px; letter-spacing: .3em; }
+
+.gallery-container, .pricing-container, .contact-container { padding-block: 82px; }
+.section-heading { margin-bottom: 38px; }
+.section-heading .eyebrow { margin-bottom: 10px; }
+h2 { font-size: clamp(34px, 4vw, 50px); line-height: 1.2; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.gallery-grid figure { margin: 0; background: #e7dccb; box-shadow: 6px 10px 18px #48341f2b; }
+.gallery-grid img { display: block; width: 100%; height: 390px; object-fit: cover; filter: saturate(.78) sepia(.1) contrast(1.03); }
+
+.pricing-container { max-width: 860px; }
+.price-list { margin: 0; padding: 0; list-style: none; }
+.price-list li { min-height: 46px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e4d7c3; font-size: 16px; }
+.price-list strong { color: var(--gold); font-size: 17px; font-weight: 600; }
+
+.contact-container { min-height: 440px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 10%; }
+.contact-copy > p:not(.eyebrow) { max-width: 500px; margin: 22px 0 28px; line-height: 1.7; }
+.whatsapp-button { min-width: 260px; padding: 16px 22px; border-radius: 4px; background: var(--green); }
+.contact-details { padding-left: 10%; border-left: 1px solid var(--line); font-style: normal; }
+.phone { display: inline-block; padding-bottom: 7px; border-bottom: 2px solid var(--gold); font-size: clamp(24px, 3vw, 34px); font-weight: 600; text-decoration: none; }
+.contact-details > p { margin: 24px 0 0; }
+.social-links { display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 13px; }
+.social-links a { font-weight: 600; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .header-inner { width: calc(100% - 36px); grid-template-columns: 1fr auto; }
+  .site-nav { grid-column: 1 / -1; grid-row: 2; justify-self: stretch; justify-content: space-between; padding-bottom: 15px; }
+  .home-container { grid-template-columns: 1fr; }
+  .home-brand { display: none; }
+  .gallery-grid { gap: 15px; }
+  .gallery-grid img { height: 300px; }
+}
+
+@media (max-width: 620px) {
+  .header-inner, .section-container { width: calc(100% - 36px); }
+  .brand-name { font-size: 32px; }
+  .brand-detail { font-size: 7px; }
+  .header-order { padding: 12px; font-size: 0; }
+  .site-nav { gap: 14px; overflow-x: auto; font-size: 11px; }
+  .site-nav a { white-space: nowrap; }
+  .home-container { min-height: 500px; padding-block: 58px; }
+  h1 { font-size: 43px; }
+  .gallery-container, .pricing-container, .contact-container { padding-block: 60px; }
+  .gallery-grid { grid-template-columns: 1fr; gap: 24px; }
+  .gallery-grid img { height: 360px; }
+  .contact-container { grid-template-columns: 1fr; gap: 52px; }
+  .contact-details { padding: 40px 0 0; border-top: 1px solid var(--line); border-left: 0; }
+  .whatsapp-button { width: 100%; }
+}
