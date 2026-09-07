@@ -225,6 +225,7 @@ font-weight: 600;
 
 .hero-subtitle::before,
 .hero-subtitle::after {
+  display: none;
   content: "";
   position: absolute;
   top: 50%;
