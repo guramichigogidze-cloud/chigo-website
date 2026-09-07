@@ -202,9 +202,10 @@ img {
 
 .hero-heading h1 {
   margin: 0;
-  font-size: clamp(54px, 6vw, 108px);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
+ font-size: clamp(44px, 4.8vw, 82px);
+line-height: 1;
+letter-spacing: -0.025em;
+font-weight: 600;
 }
 
 .hero-heading h1 span {
