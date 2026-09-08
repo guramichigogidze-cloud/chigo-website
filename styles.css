@@ -569,3 +569,178 @@ white-space: nowrap;
   height: auto;
   margin: 8px auto 0;
 }
+
+/* Mobile readability and access refinements */
+@media (max-width: 600px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .page-wrap {
+    width: calc(100% - 16px);
+    margin: 8px auto;
+  }
+
+  .poster-card {
+    min-height: 0;
+  }
+
+  .brand-panel-inner {
+    height: auto;
+    padding: 26px 20px 24px;
+  }
+
+  .logo-badge {
+    width: 148px;
+    margin-bottom: 16px;
+  }
+
+  .logo-main {
+    font-size: 42px;
+  }
+
+  .logo-sub,
+  .logo-city {
+    font-size: 12px;
+  }
+
+  .logo-city {
+    margin-top: 12px;
+  }
+
+  .brand-note {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .service-list {
+    gap: 14px;
+  }
+
+  .service-list li {
+    grid-template-columns: 36px 1fr;
+    gap: 11px;
+  }
+
+  .service-list li span:last-child {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .icon-box {
+    width: 36px;
+    height: 36px;
+  }
+
+  .location-row {
+    margin-top: 28px;
+  }
+
+  .content-panel {
+    padding: 22px 16px 20px;
+  }
+
+  .lang-switch {
+    font-size: 15px;
+  }
+
+  .hero-heading {
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .hero-title-art {
+    width: 96%;
+    margin: 8px auto 0;
+  }
+
+  .hero-subtitle {
+    display: block;
+    margin: 18px auto 0;
+    padding: 0 4px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-grid {
+    gap: 22px;
+    margin-top: 28px;
+  }
+
+  .samples-grid {
+    gap: 14px;
+  }
+
+  .sample-card img {
+    height: 240px;
+  }
+
+  .sample-card-tall img {
+    height: 280px;
+  }
+
+  .price-card {
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .price-card h2 {
+    font-size: 17px;
+  }
+
+  .price-list li {
+    padding: 9px 0;
+    font-size: 18px;
+  }
+
+  .price-list strong {
+    font-size: 18px;
+  }
+
+  .action-row {
+    gap: 14px;
+    margin-top: 28px;
+    padding-top: 10px;
+  }
+
+  .social-block a {
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  .studio-name {
+    font-size: 22px;
+  }
+
+  .phone-block {
+    justify-self: stretch;
+    text-align: left;
+  }
+
+  .phone-number {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .cta-button {
+    width: 100%;
+    min-height: 60px;
+    padding: 16px 18px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .mini-footer {
+    gap: 10px;
+    padding-top: 18px;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+  }
+}
