@@ -1,3 +1,7 @@
+[hidden] {
+  display: none !important;
+}
+
 .topbar {
   align-items: center;
   gap: 8px;
