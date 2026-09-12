@@ -744,3 +744,30 @@ white-space: nowrap;
     letter-spacing: 0.08em;
   }
 }
+
+/* Functional completion: preserve the existing design and content. */
+[hidden] { display: none !important; }
+.lang-switch { display: flex; align-items: center; gap: 5px; }
+.lang-switch button { font: inherit; letter-spacing: inherit; color: inherit; border: 0; background: none; padding: 10px 5px; min-width: 44px; min-height: 44px; cursor: pointer; }
+.lang-switch button[aria-pressed="true"] { font-weight: 700; text-decoration: underline; text-underline-offset: 5px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #755022; outline-offset: 4px; }
+.content-panel, .phone-block, .action-row > * { min-width: 0; }
+.social-block { flex-wrap: wrap; }
+.phone-number { max-width: 100%; }
+.cta-button { text-align: center; line-height: 1.4; }
+html[lang="en"] #page-title { font-size: clamp(32px, 4vw, 58px); line-height: 1.15; }
+@media (min-width: 1181px) {
+  .action-row { grid-template-columns: 1fr 1fr; }
+  .phone-block { justify-self: start; text-align: left; }
+  .cta-button { justify-self: stretch; font-size: 18px; padding-inline: 20px; }
+}
+@media (min-width: 901px) and (max-width: 1050px) {
+  .action-row { grid-template-columns: 1fr; }
+  .cta-button { justify-self: stretch; }
+}
+@media (max-width: 600px) {
+  .phone-number { font-size: clamp(21px, 7.5vw, 30px); }
+  .sample-card img { max-width: 100%; }
+  .mini-footer p { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
