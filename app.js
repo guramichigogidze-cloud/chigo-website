@@ -5,7 +5,7 @@
   const en = {
     heroTitle:'Canvas printing in Batumi',brandNote:'Your memories on canvas',
     service1:'From photos to canvas',service2:'A thoughtful gift',service3:'For your home and office',service4:'High-quality printing',
-    batumi:'Batumi',pricesTitle:'Sizes / Prices',order:'Order on WhatsApp',footerNote:'Photos • Memories • Emotions • Canvas'
+    batumi:'Batumi',pricesTitle:'Sizes / Prices',order:'Order on WhatsApp',footerNote:'Photos • Memories • Emotions • Canvas',contactCue:'Contact'
   };
   const descriptions = {ka:document.querySelector('meta[name=description]').content,en:'Canvas printing in Batumi — CHIGO Printing Studio. Canvas prints, sizes, prices and orders via WhatsApp or Messenger.'};
   const imageAlts = {ka:['ტილოზე დაბეჭდილი ფოტო','ოჯახური ფოტო ტილოზე','პეიზაჟი ტილოზე'],en:['Sample photo for a canvas print','Sample family photo for a canvas print','Sample landscape for a canvas print']};
@@ -27,4 +27,25 @@
   }
   document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click',() => setLanguage(button.dataset.lang)));
   try { if(localStorage.getItem('chigo-language') === 'en') setLanguage('en'); } catch {}
+
+  const contactCue = document.querySelector('.mobile-contact-cue');
+  const contact = document.querySelector('#contact');
+  const mobile = window.matchMedia('(max-width: 900px)');
+  let updatePending = false;
+  function updateContactCue() {
+    updatePending = false;
+    contactCue.hidden = !mobile.matches || contact.getBoundingClientRect().top <= window.innerHeight - 80;
+  }
+  function scheduleContactCue() {
+    if (!updatePending) {
+      updatePending = true;
+      window.requestAnimationFrame(updateContactCue);
+    }
+  }
+  window.addEventListener('scroll', scheduleContactCue, {passive:true});
+  window.addEventListener('resize', scheduleContactCue);
+  window.addEventListener('load', scheduleContactCue);
+  if ('ResizeObserver' in window) new ResizeObserver(scheduleContactCue).observe(document.querySelector('.poster-card'));
+  contactCue.addEventListener('click', () => contact.focus({preventScroll:true}));
+  updateContactCue();
 })();

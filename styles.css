@@ -771,3 +771,30 @@ html[lang="en"] #page-title { font-size: clamp(32px, 4vw, 58px); line-height: 1.
   .mini-footer p { overflow-wrap: anywhere; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* A small mobile cue points to the existing contact buttons. */
+.mobile-contact-cue { display: none; }
+#contact { scroll-margin-top: 22px; }
+@media (max-width: 900px) {
+  .mobile-contact-cue {
+    position: fixed;
+    right: max(18px, env(safe-area-inset-right));
+    bottom: calc(18px + env(safe-area-inset-bottom));
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 9px 12px 9px 15px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--accent-deep);
+    box-shadow: 0 3px 12px var(--shadow);
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .mobile-contact-cue svg { flex: none; }
+  .mobile-contact-cue:hover { background: #fffdf8; }
+}
