@@ -15,3 +15,5 @@
  .hero-photo .hero-image{width:130%;max-width:none;margin-left:-30%;height:auto}
  .mobile-hero-button{display:flex;margin:0;width:100%;max-width:none}
 }
+
+.language-switch{display:flex;align-items:center;gap:7px;white-space:nowrap;font-size:14px;font-weight:600;line-height:1.4}.language-switch span{color:#aaa}.language-switch a[aria-current="page"],.language-switch a:hover{color:var(--orange)}.top{flex-wrap:wrap;gap:8px 12px}html[lang="en"] .eyebrow{letter-spacing:.04em}html[lang="en"] .tag{letter-spacing:0}html[lang="en"] footer h2{letter-spacing:.04em}@media(max-width:800px){.header-right{grid-template-columns:1fr auto}.header-right .active{grid-column:1;grid-row:1}.header-right .language-switch{grid-column:2;grid-row:1;justify-self:end}.header-right nav,.header-right .social{grid-column:1/-1}}
